@@ -21,6 +21,12 @@
 
 
 /* Universal Code -  */
+.row{
+    margin: 0;
+}
+.col{
+    margin: 0;padding: 0;
+}
 
 p{
     color: var(--t-light);
@@ -106,18 +112,9 @@ p{
 /* Background at Hero and Nav */
 
 
-/*Container*/
-.container{
-    padding-inline: 130px !important;
-  
-}
-
 
 /*HERO SEction*/
 
-.hero-sec{
-
-}
 
 .hero-sec .content{
     margin-top: 240px;
@@ -159,6 +156,9 @@ font: 400 var(--t-light);
     margin-bottom: 240px;
 }
 
+.details-sec .img-part img{
+    width: 100%;
+}
 .details-sec .content{
     margin-top: 60px;
     padding: 0;
@@ -208,6 +208,10 @@ color: var(--grey);
 margin-bottom: 214px;
 }
 
+.pages-sec img{
+    width: 80%;
+}
+
 .pages-sec .content h2{
     font-size: 36px;
     font-weight: 500;
@@ -223,4 +227,23 @@ margin-bottom: 214px;
 #page3 p:nth-child(3)
 {   
     margin-bottom: 40px;
+}
+
+
+/* 
+
+Curved
+
+*/
+
+.promo-sec{
+    background-color: red;
+}
+.curved-edge {
+  --c: 80px; /* control the curvature (works with percentage) */
+  /* height: 200px; */
+  aspect-ratio: 3/2;
+  /* you can also update the 60%  */
+  mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
+  background: #40C0CB;
 }
