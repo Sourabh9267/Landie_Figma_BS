@@ -52,22 +52,48 @@
 
 
 @media screen and (max-width:580px)
+
 {
+    .main-wrapper{
+        background-size: 800px ;
+    }
+
+    #nav_btn_s{
+        margin-inline: auto;
+    }
+    
+    
     .hero-sec .content{
         margin-top: 50px;
         margin-bottom: 100px;
     }
 
-    .details-sec .main {
-        margin-top: 0;
+    .hero-sec .content h1{
+        font-size: 30px;
+        text-align: center;
     }
-    .main-wrapper{
-        background-size: 800px ;
-    }
-    
+
     .hero-sec .content .btn_grp{
         flex-wrap: wrap !important;
     }
+
+    .details-sec .main .content h2
+    {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    
+    .details-sec .main {
+        margin-top: 0;
+    }
+
+    .pages-sec .content h2{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    
     
     
 }
