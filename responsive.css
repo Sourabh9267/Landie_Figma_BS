@@ -55,8 +55,12 @@
 {
     .hero-sec .content{
         margin-top: 50px;
+        margin-bottom: 100px;
     }
 
+    .details-sec .main {
+        margin-top: 0;
+    }
     .main-wrapper{
         background-size: 800px ;
     }
