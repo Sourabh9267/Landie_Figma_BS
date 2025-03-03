@@ -21,6 +21,42 @@
 
 @media screen and (max-width:767px){
 
+.hero-sec .content{
+ margin-bottom: 0;
+}
 
+.details-sec .main{
+    margin-bottom: 100px;
+}
+
+.pages-sec .content{
+    margin-top: 50px !important;
+    padding-inline: 10px;
+}
+
+.pages-sec {
+    margin-bottom: 100px;
+}
+
+.promo-sec .curved-edge .content-wrapper .content p{
+    width: 100%;
+}
+
+.promo-sec .curved-edge .content-wrapper {
+    padding-bottom:50px !important;
+    padding-inline: 10px !important;
+}
+
+
+}
+
+
+@media screen and (max-width:480px)
+{
+    .hero-sec .content .btn_grp{
+        flex-wrap: wrap !important;
+    }
+    
     
 }
+

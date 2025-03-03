@@ -12,6 +12,13 @@
     --black:#000000;
 }
 
+[class^="col"]{
+padding: 0;
+}
+
+.row{
+    padding-inline: 0 !important;
+}
 
 *{
     margin: 0;
@@ -19,7 +26,9 @@
     font-family: "roboto";
 }
 
-
+html,body{
+    width: 100%;
+}
 /* Universal Code -  */
 .row{
     margin: 0;
@@ -230,20 +239,72 @@ margin-bottom: 214px;
 }
 
 
-/* 
 
-Curved
+/* 
+promo section &
+Curved Background
 
 */
 
-.promo-sec{
-    background-color: red;
-}
+
 .curved-edge {
-  --c: 80px; /* control the curvature (works with percentage) */
-  /* height: 200px; */
-  aspect-ratio: 3/2;
-  /* you can also update the 60%  */
+  --c: 8%;
+  aspect-ratio: 16/9;
   mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
-  background: #40C0CB;
+  background: #e7ecff87;
+  padding-top:100px;
+
+}
+
+.promo-sec{
+    min-height: 600px;
+
+}
+
+.promo-sec .curved-edge .content h2{
+  
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.promo-sec .curved-edge .content p:nth-of-type(1){
+    margin-bottom: 46px;
+    width: 40%;
+}
+
+
+.promo-sec .curved-edge .content h3{
+    
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.promo-sec .curved-edge .content p:nth-of-type(2){
+    margin-bottom: 60px;
+}
+
+.promo-sec .curved-edge .content-wrapper{
+padding-top:10%;
+padding-bottom: 40px;
+}
+
+
+/*footer*/
+
+.ftr{
+    background-color: var(--lightPrimary);
+}
+
+.ftr .ftr-top{
+    border-bottom: 1px solid var(--grey);
+}
+
+.ftr .ftr-top h4{
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.ftr .links a{
+    color: var(--grey) !important;
 }
