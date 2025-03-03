@@ -1,13 +1,5 @@
 @media screen and (max-width:991px) {
-   
-    /* NAVBAR */
-    
-  
-    
 
-    /* NAVBAR */
-
-    /* Background */
 
         
     .main-wrapper{
@@ -22,7 +14,7 @@
 
 
 .hero-sec .content{
- margin-bottom: 0;
+ margin-bottom: 150px;
 }
 
 .details-sec .main{
@@ -65,7 +57,7 @@
     
     .hero-sec .content{
         margin-top: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 160px;
     }
 
     .hero-sec .content h1{
@@ -75,6 +67,7 @@
 
     .hero-sec .content .btn_grp{
         flex-wrap: wrap !important;
+        row-gap: 10px;
     }
 
     .details-sec .main .content h2
