@@ -2,24 +2,24 @@
    
     /* NAVBAR */
     
-    #nav_btn{
-        display: none;
-    }
+  
     
-    #nav_btn_s{
-        display: inline !important;
-        width: fit-content;
-    }
-    
-    .collapse_div{
-        background-color: var(--lightPrimary);
-    }
 
     /* NAVBAR */
+
+    /* Background */
+
+        
+    .main-wrapper{
+        background: url(assets/img/path.svg) no-repeat left top / contain; 
+        background-size: 1200px;
+    }
     
 }
 
 @media screen and (max-width:767px){
+
+
 
 .hero-sec .content{
  margin-bottom: 0;
@@ -53,6 +53,8 @@
 
 @media screen and (max-width:480px)
 {
+    
+    
     .hero-sec .content .btn_grp{
         flex-wrap: wrap !important;
     }

@@ -12,13 +12,6 @@
     --black:#000000;
 }
 
-[class^="col"]{
-padding: 0;
-}
-
-.row{
-    padding-inline: 0 !important;
-}
 
 *{
     margin: 0;
@@ -30,15 +23,14 @@ html,body{
     width: 100%;
 }
 /* Universal Code -  */
-.row{
-    margin: 0;
-}
-.col{
-    margin: 0;padding: 0;
-}
+
 
 p{
     color: var(--t-light);
+}
+
+section{
+    padding-inline: 10px;
 }
 
 
@@ -102,23 +94,13 @@ p{
 
 
 /* Background at Hero and Nav */
-.bg-holder{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
+
+
+.main-wrapper{
+    background: url(assets/img/herosecbanner.png) no-repeat right top / cover; 
+    background-size: 850px;
 }
 
-.bg-1{
-    background: url(assets/img/herosecbanner.png) no-repeat right top / contain; 
-}
-
-.bg-2{ 
-    background:url(assets/img/path.svg) no-repeat left top/cover;
-}
-
-/* Background at Hero and Nav */
 
 
 
@@ -249,7 +231,6 @@ Curved Background
 
 .curved-edge {
   --c: 8%;
-  aspect-ratio: 16/9;
   mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
   background: #e7ecff87;
   padding-top:100px;
@@ -257,37 +238,48 @@ Curved Background
 }
 
 .promo-sec{
-    min-height: 600px;
-
+    padding-inline: 0;
 }
+
 
 .promo-sec .curved-edge .content h2{
   
     margin-bottom: 16px;
     font-size: 36px;
     font-weight: 500;
+
 }
 
 .promo-sec .curved-edge .content p:nth-of-type(1){
-    margin-bottom: 46px;
+    margin-bottom: 42px;
     width: 40%;
+
 }
 
 
 .promo-sec .curved-edge .content h3{
-    
+    color: var(--t-dark);
     font-size: 50px;
     font-weight: 500;
 }
 
 .promo-sec .curved-edge .content p:nth-of-type(2){
     margin-bottom: 60px;
+    color: var(--t-dark);
 }
 
-.promo-sec .curved-edge .content-wrapper{
-padding-top:10%;
-padding-bottom: 40px;
+.promo-sec .curved-edge .content p:nth-of-type(3){
+    color: #6b6b6b;
 }
+
+
+.promo-sec .curved-edge .content-wrapper{
+padding-top:50px;
+padding-bottom: 100px;
+
+}
+
+
 
 
 /*footer*/
@@ -307,4 +299,8 @@ padding-bottom: 40px;
 
 .ftr .links a{
     color: var(--grey) !important;
+}
+
+.ftr .links a:hover{
+    color: var(--links-secondary) !important;
 }
