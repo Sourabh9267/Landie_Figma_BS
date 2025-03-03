@@ -93,6 +93,9 @@
         text-align: center;
     }
 
+    .promo-sec .curved-edge .content p:nth-of-type(1){
+        width: 80%;
+    }
     
     
     
